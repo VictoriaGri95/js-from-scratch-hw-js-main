@@ -6,4 +6,12 @@
 */
 
 // your code
-let factorial
+let factorial = 1;
+let firstNaturalNumber = 1;
+const LAST_NATURAL_NUMBER = 10;
+
+while (firstNaturalNumber <= LAST_NATURAL_NUMBER) {
+  factorial = factorial * firstNaturalNumber;
+  firstNaturalNumber++
+}
+console.log(factorial)
