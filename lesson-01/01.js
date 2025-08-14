@@ -2,4 +2,12 @@
 // Результат присвойте переменной sum
 
 // your code
-let sum
+let sum = 0;
+let firstNumber = 1;
+const LAST_NUMBER = 20;
+
+while (firstNumber <= LAST_NUMBER) {
+  sum = sum + firstNumber;
+  firstNumber++;
+}
+console.log(sum);
