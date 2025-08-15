@@ -6,4 +6,12 @@
 
 // your code
 let sum = 0;
+let firstNumber = 1;
+const LAST_NUMBER = 20;
 
+while (firstNumber < LAST_NUMBER) {
+  sum = sum + firstNumber;
+  firstNumber = firstNumber + (8 % 3) // должно увеличивать на 2 (в скобках 2 надо)
+}
+
+console.log(sum)
