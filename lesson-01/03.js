@@ -9,9 +9,14 @@ let sum = 0;
 let firstNumber = 1;
 const LAST_NUMBER = 20;
 
-while (firstNumber < LAST_NUMBER) {
-  sum = sum + firstNumber;
-  firstNumber = firstNumber + (8 % 3) // должно увеличивать на 2 (в скобках 2 надо)
+while (firstNumber < LAST_NUMBER) { // 1 < 20 - true // 2 < 20 - true
+  // sum = sum + firstNumber;
+  // firstNumber = firstNumber + (8 % 3);
+  if (firstNumber % 2 !== 0) { // 1 не делится ли без остатка на 2 - true // false
+    sum = sum + firstNumber;
+  }
+  firstNumber++;
 }
 
 console.log(sum)
+
