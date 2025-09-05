@@ -15,4 +15,29 @@
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
-function findUniqueElements() {}
+function includesElement(array, element) {
+  for (let i = 0; i < array.length; i++) {
+    let item = array[i]
+    // если элемент есть в массиве, выводим True
+    if (item === element) {
+      return true
+    }
+  }
+  return false
+}
+
+function findUniqueElements(array) {
+  const newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    let item = array[i]
+    //если элемента из исходного массива еще НЕТ в новом массиве, то добавляем (если есть - игнорируем)
+    // False после выполнения includesElement со знаком ! даст True
+    if (!includesElement(newArray, item)) {
+      newArray.push(item)
+    }
+  }
+  return newArray
+
+}
+
+console.log( findUniqueElements([1, 2, 3, 2, 1, 4]))
