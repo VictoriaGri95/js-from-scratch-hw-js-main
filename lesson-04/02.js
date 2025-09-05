@@ -14,17 +14,7 @@
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-
-function includesElement(array, element) {
-  for (let i = 0; i < array.length; i++) {
-    let item = array[i]
-    // если элемент есть в массиве, выводим True
-    if (item === element) {
-      return true
-    }
-  }
-  return false
-}
+import {includesElement} from "./01.js"
 
 function findUniqueElements(array) {
   const newArray = [];
@@ -40,4 +30,4 @@ function findUniqueElements(array) {
 
 }
 
-console.log( findUniqueElements([1, 2, 3, 2, 1, 4]))
+// console.log( findUniqueElements([1, 2, 3, 2, 1, 4]))
