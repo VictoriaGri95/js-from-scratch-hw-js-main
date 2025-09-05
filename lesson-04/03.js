@@ -16,7 +16,7 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
-import {includesElement} from "./01.js"
+
 
 function findCommonElements(array1, array2) {
   let commonArray = []
@@ -38,5 +38,7 @@ function findCommonElements(array1, array2) {
   return commonArray
 }
 
-// console.log(findCommonElements(['apple', 'banana'], ['orange', 'melon']))
+console.log(findCommonElements(['apple', 'banana'], ['banana', 'orange']))
 // console.log(findCommonElements([1, 2, 3], [2, 3, 4, 5, 6]))
+
+console.log(findCommonElements([1], [2, 3, 5, 6]))
