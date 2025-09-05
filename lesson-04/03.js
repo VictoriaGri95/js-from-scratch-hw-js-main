@@ -37,5 +37,7 @@ function findCommonElements(array1, array2) {
   }
   return commonArray
 }
-
-console.log(findCommonElements([1, 2, 3, 5], [2, 3, 4, 5]))
+console.log(findCommonElements([6, 2, 3, 5, 7, 8, 8], [2, 3, 4, 5, 6, 8]))
+console.log(findCommonElements([6, 2, 3, 5], [2, 3, 4, 5, 6]))
+console.log(findCommonElements([1, 2, 3, 4], [5, 6, 7, 8, 9]))
+console.log(findCommonElements(['apple', 'banana', 'cherry'], ['banana']))
