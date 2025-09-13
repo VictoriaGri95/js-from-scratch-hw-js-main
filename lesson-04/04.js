@@ -19,4 +19,4 @@ let newArray = str.split('')
   }
   return newArray.join('')
 }
-console.log(doubleEachCharacter('str'))
+
