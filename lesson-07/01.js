@@ -18,9 +18,9 @@ const WEB_TECH_IMAGES = [
   'https://production-it-incubator.s3.eu-central-1.amazonaws.com/file-manager/Image/784380b9-6937-42a6-bdfe-869835820234_html-magic-logo.jpg',
 ]
 
-const prevButton = document.getElementById('prev-button')
-const nextButton = document.getElementById('next-button')
-const image = document.getElementById('web-tech-image')
+const prevButtonElement = document.getElementById('prev-button')
+const nextButtonElement = document.getElementById('next-button')
+const imageElement = document.getElementById('web-tech-image')
 let currentIndex = 0;
 
 const currentImage = (index) => {
@@ -30,13 +30,13 @@ const currentImage = (index) => {
     index = 0
   }
   currentIndex = index;
-  image.setAttribute('src', WEB_TECH_IMAGES[currentIndex])
+  imageElement.setAttribute('src', WEB_TECH_IMAGES[currentIndex])
 }
 
-nextButton.addEventListener('click', () => {
+nextButtonElement.addEventListener('click', () => {
   currentImage(currentIndex + 1)
 
 })
-prevButton.addEventListener('click', () => {
+prevButtonElement.addEventListener('click', () => {
   currentImage(currentIndex - 1)
 })
